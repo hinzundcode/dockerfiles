@@ -12,6 +12,6 @@ RUN set -xe \
 	&& tar -xvf node-v6.0.0-linux-armv7l.tar.xz \
 	&& cp -R node-v6.0.0-linux-armv7l/bin/ node-v6.0.0-linux-armv7l/include/ node-v6.0.0-linux-armv7l/lib/ node-v6.0.0-linux-armv7l/share/ /usr/local/ \
 	&& rm -r node-v6.0.0-linux-armv7l \
-	&& rm -r node-v6.0.0-linux-armv7l.tar.xz
+	&& rm node-v6.0.0-linux-armv7l.tar.xz
 
 CMD ["node"]
